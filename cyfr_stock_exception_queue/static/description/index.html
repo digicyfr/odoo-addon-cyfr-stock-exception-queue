@@ -1,2 +1,26 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Stock Exception Queue</title></head>
-<body><h1>Stock Exception Queue</h1><p>Find negative free stock, below-minimum locations and zero stock observed across scans in Odoo 19 Inventory.</p><p>Read-only, company-scoped and independent of other Cyfr addons.</p></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Stock Exception Queue for Odoo 19</title>
+</head>
+<body>
+  <section class="container">
+    <h1>Stock Exception Queue</h1>
+    <p class="lead">Review negative free stock, quantities below reorder minimums, and zero availability observed across scans.</p>
+    <p>Free, open-source Odoo 19 addon (LGPL-3). Requires the standard <code>stock</code> module.</p>
+    <h2>What it does</h2>
+    <ul>
+      <li>Scan one company and warehouse scope in bounded product batches.</li>
+      <li>See free quantity, orderpoint minimum, severity, last scan and stale status in an advisory queue.</li>
+      <li>Include active orderpoint items even when no stock quant exists; exclude consigned stock.</li>
+      <li>Use English and Polish screens, guides, tests and demo data without changing stock records.</li>
+    </ul>
+    <h2>See it in Odoo</h2>
+    <p>Open Inventory → Stock Exceptions → Scan Scopes and scan the selected warehouse scope.</p>
+    <img class="img-fluid" src="main_screenshot.png" width="1440" height="900" alt="Stock Exception Queue in Odoo 19 showing six advisory rows, free quantities, reorder minimums and the stale marker">
+    <h2>Compatibility and scope</h2>
+    <p>Tested on Odoo 19 Community, including installation from the public ZIP. Results are advisory. Enterprise compatibility, large-shop performance and interactive site accessibility remain unverified.</p>
+  </section>
+</body>
+</html>
